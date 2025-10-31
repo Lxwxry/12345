@@ -1,0 +1,11 @@
+<Window x:Class="SyncDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Синхронизация потоков" Height="300" Width="400">
+    <StackPanel Margin="10">
+        <Button Content="Запустить гонку данных" Click="Race_Click" Margin="0,0,0,10"/>
+        <Button Content="Запустить безопасное добавление (lock)" Click="SafeAdd_Click" Margin="0,0,0,10"/>
+        <Button Content="Проверить Monitor с таймаутом" Click="MonitorTest_Click" Margin="0,0,0,10"/>
+        <TextBox x:Name="output" Height="150" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+    </StackPanel>
+</Window>
